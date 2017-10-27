@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Common App</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">170905860127777</string>
+    <string name="fb_login_protocol_scheme">fb170905860127777</string>
+
+    <!--for the login screen xml-->
+    <string name="strHntEmailLogin">Email</string>
+    <string name="strHntPass">Password</string>
+    <string name="str_register">REGISTER</string>
+    <string name="str_sign_in">SIGN IN</string>
+    <string name="str_or">or</string>
+    <string name="str_conn_fb">Connect with Facebook</string>
+    <string name="str_conn_tw">Connect with Twitter</string>
+
+    <!--signup-->
+    <string name="strHntFirstName">First Name</string>
+    <string name="strHntLastName">Last Name</string>
+    <string name="strHntRegiEmail">Email id.</string>
+    <string name="strHntConfirmPass">Re-type password</string>
+
+    <!--forgot password-->
+    <string name="strHntRegEmail">enter your registered email id</string>
+    <string name="strForgotPass">forgot password</string>
+
+
+    <!--change password-->
+    <string name="strHntCurrentPassword">current password</string>
+    <string name="strHntNewPass">new password</string>
+    <string name="strHntConfPass">confirm password</string>
+    <string name="strHntReTypePass">retype password</string>
+
+
+
+    <!--common messages-->
+    <string name="strComingSoon">Coming Soon...</string>
+    <string name="strNetError">We can\'t detect an internet connection. please check and try again.</string>
+    <string name="strServerError">We can\'t detect an internet connection. please check and try again.</string>
+    <string name="strSomethingWentwrong">Oops, something went wrong. Please try again latter.</string>
+
+
+    <!--for the google analytycs screen names-->
+    <string name="scrn_ActDashboard">Dashboard Screen</string>
+    <string name="scrn_WebviewContentActivity_About">About Us</string>
+    <string name="scrn_WebviewContentActivity_Support">Support</string>
+    <string name="scrn_ActChallengeRoute">ChallangeStart</string>
+    <string name="scrn_ActChangePassword">ChangePassword</string>
+    <string name="scrn_ActEditProfile">EditProfile</string>
+    <string name="scrn_ActForgotPassword">ForgotPassword</string>
+    <string name="scrn_ActLogin">Login</string>
+    <string name="scrn_ActRegisterMain">RegisterMain</string>
+    <string name="scrn_ActAddAddress">AddAddress</string>
+    <string name="scrn_ActSelectAddress">SelectAddress</string>
+    <string name="scrn_ActNotification">Notifications</string>
+    <string name="scrn_ActMyRoute_OtherRouteList">OtherRouteList</string>
+    <string name="scrn_ActMyRoute_MyRouteList">MyRouteList</string>
+    <string name="scrn_ActSignup">Register</string>
+    <string name="scrn_Navigation_MapActivity">Navigation</string>
+    <string name="scrn_BaseActivity">SideMenu</string>
+    <string name="scrn_ActCreateRoute">CreateRoute</string>
+
+    <!--<string name="scrn_ActLogin">Login Screen</string>-->
+
+</resources>

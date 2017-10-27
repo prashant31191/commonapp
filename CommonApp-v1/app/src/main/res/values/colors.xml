@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#14000000</color>
+
+    <color name="indicator_unselected">#4D000000</color>
+
+
+    <color name="blue_grey">#455A64</color>
+    <color name="red_0">#F44336</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <!--<color name="green">#4CAF50</color>-->
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_orange">#FF5722</color>
+
+
+   <!-- <color name="primaryPressed">#059495</color>
+    <color name="primaryFocused">#059495</color>
+    <color name="primary">#07c4b5</color>&lt;!&ndash; 00FFFFFF &ndash;&gt;
+-->
+
+    <color name="clr_menu_unpress">#111111</color>
+    <color name="clr_menu_press">#000000</color>
+
+
+    <!--for the raw_homecategory_list EAEAEA-->
+
+    <color name="clr_txt_gray">#999999</color>
+    <color name="clr_txt_name">#333333</color>
+    <color name="clr_txt_title">#111111</color>
+
+    <!--for the detail screen-->
+    <color name="clr_d_title">#333333</color>
+
+    <color name="clrCardbgUnRead">#EEEEEE</color>
+    <color name="clrCardbgRead">#FFFFFF</color>
+
+    <color name="trWhiteFull">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="clrTrBgWhite">#CCFFFFFF</color>
+    <color name="white2">#99FFFFFF</color>
+
+
+    <!--for the download image screen-->
+    <color name="bgTrWhite">#55FFFFFF</color>
+
+    <color name="clrBtnWhiteUnpress">#FFFFFF</color>
+    <color name="clrBtnWhitePress">#AAFFFFFF</color>
+
+
+    <color name="clrBtnBrownUnpress">#4d342a</color>
+    <color name="clrBtnBrownPress">@color/clr_txt_trBlack50</color>
+
+    <color name="clrBtnBlackUnpress">#000000</color>
+    <color name="clrBtnBlackPress">#AA000000</color>
+
+    <color name="clrBtnBgUnpress">#777777</color>
+    <color name="clrBtnBgPress">#ffffff</color>
+
+    <color name="clrTVBtnUnpress">#79000000</color>
+    <color name="clrTvBtnPress">#dddddd</color>
+
+    <color name="clrEtHint">#4D000000</color>
+    <color name="clrEtText">#4d342a</color>
+    <color name="clrEtPrimaryLineText">#000000</color>
+    <color name="clrEtDisableUnderLine">#79000000</color>
+
+
+
+    <color name="clrTabTxtUnpress">#80FFFFFF</color>
+    <color name="clrTabTxtPress">#FFFFFF</color>
+
+    <color name="bg_color_tabview">#1f000000</color>
+
+    <color name="clrGreenOnline">#007700</color>
+
+    <color name="clrGoLiveRed">#cc0000</color>
+
+    <color name="clrUnreadNoti">#07c4b5</color>
+
+    <color name="clrTrBlack_text">#79000000</color>
+
+    <!--for the login screen-->
+    <color name="clrtext_unpress">#79000000</color> <!-- @color/green_bg  07c5bc-->
+    <color name="clrtext_press">#07c4b5</color>
+
+    <color name="clrGooglePlus">#de5347</color>
+
+    <!--for the tab colors-->
+    <color name="tabIndicatorColor">#111111</color>
+    <color name="tabTextColor">#111111</color>
+
+
+
+
+    <color name="clr_swich_unpress">#111111</color> <!-- @color/green_bg  07c5bc-->
+    <color name="clr_swich_press">#999999</color>
+
+    <!--seeka colors-->
+
+
+
+    <color name="trTheme">#80FFC107</color>
+    <color name="clrTheme">#FFC107</color>
+    <color name="clrDarkTheme">#cc9a05</color>
+    <color name="colorAccent">#827069</color>
+
+
+    <!--for the v-21 status color 07c4b5-->
+    <color name="clrStatusbar">@color/clrDarkTheme</color>
+    <color name="clrScrollList">@color/clrTheme</color>
+
+    <color name="HMprimaryPressed">@color/clrDarkTheme</color> <!-- @color/green_bg  07c5bc-->
+    <color name="HMprimaryFocused">@color/clrTheme</color>
+    <color name="HMprimary">@color/clrTheme</color><!-- 00FFFFFF -->
+
+
+    <color name="primaryPressed">@color/clrDarkTheme</color>
+    <color name="primaryFocused">@color/clrDarkTheme</color>
+    <color name="primary">@color/clrTheme</color><!-- 00FFFFFF -->
+    <color name="colorPrimary">@color/clrTheme</color><!-- 00FFFFFF -->
+
+
+    <color name="clr_brown">#4d342a</color>
+    <color name="clr_divider">#4d342a</color>
+
+    <color name="clr_txt_brown">#4d342a</color>
+    <color name="clr_txt_trBlack50">#cccccc</color>
+
+
+
+
+    <color name="black">#000000</color>
+    <color name="trBlack10">#1A000000</color>
+    <color name="trBlack40">#66000000</color>
+    <color name="trBlack80">#88000000</color>
+    <color name="clrBlack">#000000</color>
+    <color name="clrRed">#cc0000</color>
+
+    <color name="clr_list_bg">#FFFFFF</color>
+
+    <color name="clrWhite">#FFFFFF</color>
+    <color name="clrDarkWhite">#EEEEEE</color>
+    <color name="clrTrWhite">#40FFFFFF</color>
+
+    <color name="clrGray">#AAAAAA</color>
+    <color name="clrDarkGray">#666666</color>
+
+
+
+    <color name="clrFullTr">#00FFFFFF</color>
+    <color name="clrLineSaffron">#ff8000</color>
+
+
+    <color name="clrTimeRawBookig">#AAAAAA</color>
+    <color name="clrBGRawBookig">#1A202E</color>
+
+     <color name="clrUserImageShadow">#111111</color>
+    <color name="clrFacebook">#3b5998</color>
+    <color name="clrGPlus">#DE5347</color>
+    <color name="clrTwitter">#1DA1F2</color>
+
+    <color name="white_non_tr_light">#CECFD1</color>
+    <color name="white_non_tr_dark">#909092</color>
+
+    <color name="clrGreenLight">#3BD74F</color>
+    <color name="clrGreenDark">#299637</color>
+
+    <color name="clrTwLight">#16B8DA</color>
+    <color name="clrTwDark">#0f8098</color>
+
+    <color name="clrFbLight">#0B51B6</color>
+    <color name="clrFbDark">#07387f</color>
+
+    <!--SK map-->
+
+    <color name="blue_filling">#e0e0ff</color>
+    <color name="blue_outline">#6060ff</color>
+    <color name="darker_grey">#404040</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="grey_options_group">#a0a0a0</color>
+    <color name="selected">#FAEFAA</color>
+
+
+
+    <color name="clrBgDark">#1A202E</color>
+    <color name="clrTrBlackText">#801A202E</color>
+    <color name="clrBlackText">#1A202E</color>
+
+
+
+    <color name="clrBlueBGHeader">#3D9AE8</color>
+
+
+
+    <color name="clrEP_Tag_bg">#3D9AE8</color>
+    <color name="clrEP_Tag_txt">#FFFFFF</color>
+    <color name="clrEP_Tag_small_txt">#000000</color>
+    <color name="clrEP_line">#888888</color>
+
+
+    <color name="clrNavyBlue">#1A202E</color>
+
+
+
+    <color name="clr_bg_base">#1A202E</color>
+    <color name="clrTheme_data">#F67F00</color>
+
+    <!--for the sk map new-->
+    <color name="searchBG">#f9ffff</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="warningRed">#f59681</color>
+    <color name="Instruction_bg">#CC6ebad4</color>
+    <color name="best_rout_color">#11b468</color>
+
+
+    <!--
+
+    alpha colors
+
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00-->
+
+</resources>

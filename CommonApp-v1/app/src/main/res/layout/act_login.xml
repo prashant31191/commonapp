@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContainerSub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrTheme"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/llLogin"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/screen_m_d14"
+            android:paddingRight="@dimen/screen_m_d14"
+            android:paddingBottom="@dimen/screen_m_d14"
+            android:paddingTop="@dimen/screen_m_d6"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/screen_m_d6"
+                >
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/m_18sp"
+                    android:textColor="@color/clr_txt_brown"
+                    android:paddingTop="@dimen/m_8dp"
+                    android:paddingBottom="@dimen/m_8dp"
+                    android:text="Login" />
+
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/btn_txt_tr_black_brown_color"
+                    android:textSize="@dimen/m_18sp"
+                    android:paddingTop="@dimen/m_8dp"
+                    android:paddingBottom="@dimen/m_8dp"
+                    android:text="Register" />
+
+
+            </RelativeLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="@dimen/m_8dp"
+
+                android:maxLength="50"
+                android:layout_alignParentTop="true"
+                android:hint="@string/strHntEmailLogin"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+
+                android:textSize="@dimen/m_16sp"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+
+                app:met_textColor ="@color/clrEtText"
+                app:met_baseColor="@color/clrEtHint"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="false"
+                app:met_primaryColor="@color/clrEtPrimaryLineText">
+
+                <requestFocus />
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/m_8dp"
+
+                android:maxLength="50"
+                android:layout_alignParentTop="true"
+                android:hint="@string/strHntPass"
+                android:inputType="textPassword"
+                android:singleLine="true"
+
+                android:textSize="@dimen/m_16sp"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+
+                app:met_textColor ="@color/clrEtText"
+                app:met_baseColor="@color/clrEtHint"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="false"
+                app:met_primaryColor="@color/clrEtPrimaryLineText">
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="12dp"
+                android:text="Forgot Password ?"
+                android:textColor="@color/btn_txt_brown_color"
+                android:textSize="@dimen/m_12sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/llBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/m_5dp"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlFbData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_20dp"
+                android:paddingTop="@dimen/m_10dp"
+
+                android:clickable="true"
+                >
+                <ImageView
+                    android:id="@+id/ivFbIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook"
+                    android:background="@drawable/fb_fill_square_button"
+                    android:paddingTop="@dimen/m_10dp"
+                    android:paddingLeft="@dimen/m_10dp"
+                    android:paddingRight="@dimen/m_10dp"
+                    android:layout_marginRight="@dimen/m_10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login with"
+                    android:layout_toRightOf="@+id/ivFbIcon"
+                    android:layout_above="@+id/tvTag2"
+                    android:textColor="@color/btn_txt_tr_black_brown_color"
+                    android:textSize="@dimen/m_12sp" />
+
+                <TextView
+                    android:id="@+id/tvTag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:layout_toRightOf="@+id/ivFbIcon"
+                    android:layout_alignBottom="@+id/ivFbIcon"
+                    android:textColor="@color/btn_txt_tr_black_brown_color"
+                    android:textSize="@dimen/m_16sp" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fabNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:backgroundTint="@color/clrTheme"
+            android:tint="@color/white"
+            app:borderWidth="0dp"
+            app:elevation="@dimen/fab_elevation_3dp"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="@dimen/screen_m_d14"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_btn_tv"
+        style="@style/App_BtnFbTViewStyle"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/str_conn_fb" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_btn_tv"
+        style="@style/App_BtnBgBorderTViewStyle"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/m_3dp"
+        android:text="SIGN IN" />
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitterLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTwitter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_btn_tv"
+        style="@style/App_BtnTwTViewStyle"
+        android:layout_above="@+id/tvFacebook"
+        android:layout_marginBottom="@dimen/m_8dp"
+
+        android:gravity="center"
+        android:text="@string/str_conn_tw"
+        />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <!--@drawable/splash-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash"
+        android:scaleType="centerCrop"
+        />
+
+    <!--
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">-->
+
+<RelativeLayout
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ivAppIcon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:text="seeka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/clrTrBlack_text"
+        android:paddingLeft="10dp"
+        android:textSize="47dp"
+        android:layout_below="@+id/ivAppIcon"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+android:visibility="gone"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <!--
+        </LinearLayout>-->
+</RelativeLayout>

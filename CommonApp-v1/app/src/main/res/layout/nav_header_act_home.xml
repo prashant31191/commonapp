@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_bg_base"
+    android:fitsSystemWindows="true"
+    android:gravity="left"
+
+
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <!--@dimen/nav_header_height-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlBaseMenuHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+android:visibility="gone"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivNotificationBase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:padding="15dp"
+            android:background="@drawable/btn_home_ripple"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/notification" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/rlBaseMenuHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/m_35dp"
+
+
+        >
+    <com.utils.CircularImageView
+        android:id="@+id/ivUserPhotoBase"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/m_14dp"
+        android:layout_marginRight="@dimen/m_5dp"
+
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_ph" />
+
+
+   <!-- <TextView
+        android:id="@+id/tvUsernameBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Rox Morphy"
+        android:singleLine="true"
+        android:textColor="@color/clrBlack"
+        android:textSize="@dimen/text_18s"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUserPhotoBase" />
+    <TextView
+        android:id="@+id/tvUseremailBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:text="roxmorphy22@gmail.com"
+        android:singleLine="true"
+        android:textColor="@color/trBlack40"
+        android:textSize="@dimen/text_14s"
+        android:layout_below="@+id/tvUsernameBase"
+        android:layout_toEndOf="@+id/ivUserPhotoBase" />-->
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvUsernameBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        android:layout_marginLeft="@dimen/m_14dp"
+        android:layout_marginRight="@dimen/m_5dp"
+
+        android:layout_marginTop="@dimen/m_10dp"
+        android:text="Rox Morphy"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18s"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUserPhotoBase" />
+    <TextView
+        android:id="@+id/tvUseremailBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/m_14dp"
+        android:layout_marginRight="@dimen/m_5dp"
+        android:layout_marginTop="@dimen/m_3dp"
+        android:layout_marginBottom="@dimen/m_35dp"
+        android:text="roxmorphy22@gmail.com"
+        android:singleLine="true"
+        android:textColor="@color/bgTrWhite"
+        android:textSize="@dimen/text_14s"
+        android:layout_below="@+id/tvUsernameBase"
+        android:layout_toEndOf="@+id/ivUserPhotoBase" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

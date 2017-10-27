@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bsm_header_43m"
+            android:background="@color/clrTheme">
+
+            <RelativeLayout
+                android:id="@+id/headerlayoutSub_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMenuMain_tmp"
+                    android:layout_width="@dimen/bsm_header_43m"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rlMenu_tmp"
+                        android:layout_width="@dimen/bsm_header_43m"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_home_ripple">
+
+                        <ImageView
+                            android:id="@+id/ivMenu_tmp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="left|top"
+                            android:src="@drawable/ic_action_menu" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlRightIcons_tmp"
+                    android:layout_width="@dimen/bsm_header_menu43d"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlMenu4_tmp"
+                        android:layout_width="@dimen/bsm_header_menu43d"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/btn_home_ripple"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivMenu4_tmp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="right|top"
+                            android:src="@drawable/menu_selector" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_toolbar">
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="#a888"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0888"
+                android:gravity="center"
+                android:minWidth="250dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/white" />
+
+
+            <ImageView
+                android:id="@+id/imageMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

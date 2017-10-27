@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_act_signup_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/svMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:visibility="visible">
+
+                <com.utils.CircularImageView
+                    android:id="@+id/ivProfPic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_ph" />
+
+                <ImageView
+                    android:id="@+id/ivProfPicPlusSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivProfPic"
+                    android:layout_marginLeft="-14dp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_toRightOf="@+id/ivProfPic"
+                    android:background="@drawable/add_pic"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/llPersionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTagPersInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/clrEP_Tag_bg"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="PERSIONAL INFORMATION"
+                    android:textColor="@color/clrEP_Tag_txt"
+
+                    android:textSize="@dimen/txt_tg_s24dp"
+
+                    />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagFName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="First Name"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etFirstName"
+                            style="@style/App_EPStyle"
+                            android:layout_weight="0.32"
+                            android:hint="First Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagFLast"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Last Name"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            style="@style/App_EPStyle"
+                            android:layout_weight="0.32"
+                            android:hint="Last Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Email"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:hint="Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvChangePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:gravity="center_vertical"
+                            android:text="Change Password"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Website"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etWeb"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:hint="Website"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagBio"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+                            android:gravity="center_vertical"
+                            android:text="Bio"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etBio"
+                            style="@style/App_EP_All_Style"
+                            android:layout_height="70dp"
+                            android:hint="Bio"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:minLines="5"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Age"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etAge"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:hint="Age"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Height"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etHeight"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:hint="0"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.68"
+                            android:text="Weight"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etWeight"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:hint="0"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+
+                            android:gravity="center_vertical"
+                            android:text="Country"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <TextView
+                            android:id="@+id/etCountry"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:hint="Country" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagState"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+
+                            android:gravity="center_vertical"
+                            android:text="State"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <TextView
+                            android:id="@+id/etState"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:hint="State" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+
+                            android:gravity="center_vertical"
+                            android:text="City"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+
+                        <TextView
+                            android:id="@+id/etCity"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:hint="City" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvTagCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_et_white_bg"
+                            android:layout_weight="0.68"
+
+                            android:gravity="center_vertical"
+                            android:text="Company"
+                            android:textColor="@color/clrEP_Tag_small_txt"
+                            android:textSize="@dimen/txt_tg_s18dp" />
+
+                        <EditText
+                            android:id="@+id/etCompany"
+                            style="@style/App_EP_All_Style"
+                            android:layout_weight="0.32"
+                            android:imeOptions="actionNext"
+                            android:hint="Company" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_1dp"
+                        android:background="@color/clrEP_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvTagClgUni"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_et_white_bg"
+                        android:layout_weight="0.68"
+
+                        android:gravity="center_vertical"
+                        android:text="College / Uni."
+                        android:textColor="@color/clrEP_Tag_small_txt"
+                        android:textSize="@dimen/txt_tg_s18dp" />
+
+                    <EditText
+                        android:id="@+id/etClgUni"
+                        style="@style/App_EP_All_Style"
+                        android:layout_weight="0.32"
+                        android:imeOptions="actionNext"
+                        android:hint="College / University" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_1dp"
+                    android:background="@color/clrEP_line" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvSocial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/clrEP_Tag_bg"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="SOCIAL INFORMATION"
+                    android:textColor="@color/clrEP_Tag_txt"
+
+                    android:textSize="@dimen/txt_tg_s24dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvTagFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_et_white_bg"
+                        android:layout_weight="0.68"
+
+                        android:gravity="center_vertical"
+                        android:text="Facebook"
+                        android:textColor="@color/clrEP_Tag_small_txt"
+                        android:textSize="@dimen/txt_tg_s18dp" />
+
+                    <TextView
+                        android:id="@+id/etFacebook"
+                        style="@style/App_EP_All_Style"
+                        android:layout_weight="0.32"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:hint="Connect" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_1dp"
+                    android:background="@color/clrEP_line" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvTagTwitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_et_white_bg"
+                        android:layout_weight="0.68"
+
+                        android:gravity="center_vertical"
+                        android:text="Twitter"
+                        android:textColor="@color/clrEP_Tag_small_txt"
+                        android:textSize="@dimen/txt_tg_s18dp" />
+
+                    <TextView
+                        android:id="@+id/etTwitter"
+                        style="@style/App_EP_All_Style"
+                        android:layout_weight="0.32"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:hint="Connect" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_1dp"
+                    android:background="@color/clrEP_line" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_btn_tv"
+                style="@style/App_BtnGreenTViewStyle"
+
+                android:layout_marginTop="@dimen/m_24dp"
+                android:layout_marginBottom="@dimen/m_24dp"
+                android:gravity="center"
+                android:text="SUBMIT" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

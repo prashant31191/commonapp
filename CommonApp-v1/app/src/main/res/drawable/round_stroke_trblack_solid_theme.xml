@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/clrTheme"/>
+            <corners android:radius="500dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/clrFullTr"/>
+            <stroke android:width="@dimen/m_2dp" android:color="@color/clr_txt_trBlack50"/>
+            <corners android:radius="500dp"/>
+        </shape>
+    </item>
+
+</selector>
