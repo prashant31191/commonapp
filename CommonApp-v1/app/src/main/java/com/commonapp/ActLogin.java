@@ -25,6 +25,7 @@ import android.widget.TextView;
 
 import com.api.ApiService;
 import com.api.response.RegisterResponse;
+import com.crashlytics.android.Crashlytics;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookAuthorizationException;
@@ -60,6 +61,7 @@ import java.util.Arrays;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.fabric.sdk.android.Fabric;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -147,6 +149,8 @@ public class ActLogin extends BaseActivity implements GoogleApiClient.OnConnecti
             ButterKnife.bind(this);
 
             App.GenerateKeyHash();
+
+            Fabric.with(this, new Crashlytics());
 
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);

@@ -15,6 +15,12 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    // You can also use jcenter if you prefer
+    mavenCentral()
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -41,11 +47,6 @@ android {
     }
 }
 
-repositories {
-    maven { url 'https://maven.fabric.io/public' }
-    // You can also use jcenter if you prefer
-    mavenCentral()
-}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -95,10 +96,9 @@ dependencies {
         transitive = true
     }
     /*Crashlytics gradle*/
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
-        transitive = true
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true;
     }
-
 
     //Custome edittext floating label
     //https://github.com/rengwuxian/MaterialEditText/wiki
